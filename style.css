@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    position: relative;
+}
+
+header h1 {
+    font-weight: lighter;
+    font-size: 3em;
+}
+
+header form {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+
+header form input {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding: 0.5em 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+nav {
+    min-width: fit-content;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+
+article {
+    padding: 1em;
+}
+
+p {
+    text-align: justify;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+[id|="card"] {
+    padding: 1em;
+    color: white;
+}
+
+[id|="card"] h5 {
+    font-size: 1.5em;
+}
+
+#card-1 {
+    background-color: red;
+}
+
+#card-2 {
+    background-color: green;
+}
+
+#card-3 {
+    background-color: blue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        text-align: center;
+        font-size: 6em;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .card-group {
+        flex-direction: row;
+    }
+
+    [id|="card"] {
+        border-left: 10px solid black;
+        color: black;
+    }
+
+    #card-1 {
+        background-color: transparent;
+        border-left-color: red;
+    }
+    
+    #card-2 {
+        background-color: transparent;
+        border-left-color: green;
+    }
+    
+    #card-3 {
+        background-color: transparent;
+        border-left-color: blue;
+    }
+}
